@@ -1,0 +1,32 @@
+.btn {
+    margin-top: 15px;
+    width: 100%;
+    color: $color-link;
+    border: none;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border-radius: 5px;
+    @include mq {
+      padding: 10px 30px;
+    }
+  
+  }
+
+  @each $button, $color in $buttons {
+    .#{$button} {
+      background-color: $color;
+
+      &:hover {
+        background-color: lighten($color, 15%);
+      }
+    } 
+    
+  }
+  
+  .btn + .btn {
+    @include mq {
+    margin-left: 10px;
+    }
+  }
+  
+  

@@ -1,0 +1,17 @@
+//------- colors -------
+$color-headline-1: #58e1c1; //lightblue
+$color-main: #777; //grey
+$color-button: #51ddfc;
+$color-link: #fff;
+$color-button-light: lighten($color-button, 15%);
+//------- breakpoints -------
+$break-l: 768px;
+//------- map for buttons -------
+$buttons: (
+'default': #51ddfc,
+'success': #63cc82,
+'error': #e4757a,
+'warning': #fd7856,
+'info': #927bc1,);
+
+
